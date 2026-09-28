@@ -1,0 +1,506 @@
+
+
+
+
+.ajouterprat-page {
+
+
+
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ajouterpra-form {
+
+
+
+
+  max-width: 500px;
+
+
+  width: 100%;
+
+  background: rgba(255,255,255,0.95);
+
+
+
+
+  backdrop-filter: blur(8px);
+  padding: 2.5rem 2rem;
+
+  border-radius: 1rem;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+
+  display: flex;
+
+  flex-direction: column;
+
+
+  gap: 1.5rem;
+
+
+
+
+  box-sizing: border-box;
+  animation: fadeIn 0.3s ease-out;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+
+  from { opacity: 0; transform: translateY(20px); }
+
+
+
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+
+.ajouterpratiquetitre {
+
+
+
+
+
+  text-align: center;
+
+  font-size: 2rem;
+
+  font-weight: 700;
+
+
+  color: #fff;
+  background: linear-gradient(135deg, #4f46e5 0%, #10b981 100%);
+
+
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+
+
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+.group-formulaire {
+
+
+  display: flex;
+
+
+  flex-direction: column;
+
+
+
+
+  gap: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+.form-lab {
+
+
+  font-weight: 600;
+
+  color: #374151;
+
+  font-size: 0.95rem;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.formu-input,
+.formu-text,
+.formu-select {
+
+
+
+
+
+
+
+  padding: 0.75rem 1rem;
+
+
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+
+
+  font-size: 1rem;
+
+
+  transition: all 0.2s ease-in-out;
+
+
+  width: 100%;
+
+
+  box-sizing: border-box;
+
+
+
+
+  background: white;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.formu-input:focus,
+
+
+
+.formu-text:focus,
+
+
+.formu-select:focus {
+
+
+
+  outline: none;
+
+
+  border-color: #4f46e5;
+
+
+
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.2);
+
+
+
+
+}
+
+
+
+
+.formu-text {
+
+
+
+  min-height: 100px;
+
+
+
+  resize: vertical;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.formu-select {
+
+
+
+  cursor: pointer;
+
+
+
+  appearance: none;
+
+
+  background: white;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ajouterprat-btn {
+
+
+
+  padding: 0.75rem 1.5rem;
+
+
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+
+
+
+  color: white;
+
+
+  border: none;
+  border-radius: 50px;
+
+
+
+  font-weight: 600;
+
+
+
+  font-size: 1rem;
+
+
+  cursor: pointer;
+
+
+
+  transition: all 0.2s ease-in-out;
+
+
+
+  margin-top: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ajouterprat-btn:hover {
+
+
+
+  transform: translateY(-2px);
+
+
+
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+
+
+
+  filter: brightness(1.05);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+
+
+  .ajouterpra-form {
+    padding: 2rem 1.5rem;
+  }
+
+
+
+  .ajouterpratiquetitre {
+    font-size: 1.75rem;
+  }
+
+
+
+
+}
+
+

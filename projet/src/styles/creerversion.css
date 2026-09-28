@@ -1,0 +1,437 @@
+
+
+
+
+
+
+
+
+
+
+
+.creerversionpage {
+
+
+
+
+  min-height: 100vh;
+  display: flex;
+
+
+  align-items: center;
+
+
+  justify-content: center;
+
+
+
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  
+  
+  
+  
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.creerversion-contain {
+
+
+  width: 100%;
+
+
+  max-width: 600px;
+
+
+  background: rgba(255, 255, 255, 0.95);
+  
+  
+  backdrop-filter: blur(10px);
+
+
+  padding: 2.5rem;
+
+
+  border-radius: 1.2rem;
+
+
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.15),
+              0 10px 10px -5px rgba(0,0,0,0.08);
+ 
+ 
+ 
+           
+              animation: fadeIn 0.3s ease-out;
+ 
+ 
+ 
+              box-sizing: border-box;
+
+
+
+}
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+.creerversiontitre {
+
+
+  text-align: center;
+  font-size: 2rem;
+
+
+  font-weight: 700;
+
+
+  margin-bottom: 2rem;
+
+
+  background: linear-gradient(135deg, #4f46e5, #10b981);
+  -webkit-background-clip: text;
+
+
+
+  -webkit-text-fill-color: transparent;
+
+
+
+}
+
+
+
+
+
+.creerversionform {
+
+
+
+  display: flex;
+  flex-direction: column;
+
+
+  gap: 1.5rem;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.creer-form-group {
+
+
+
+  display: flex;
+
+
+
+  flex-direction: column;
+
+
+
+}
+
+
+
+.creer-form-group label {
+
+
+
+  font-weight: 600;
+
+
+  margin-bottom: 0.5rem;
+
+
+  color: #374151;
+
+
+
+
+
+
+
+}
+
+.creer-form-group input,
+.creer-form-group textarea,
+.creer-form-group select {
+
+
+
+
+
+
+
+
+  padding: 0.9rem 1.2rem;
+
+
+  border: 2px solid #e5e7eb;
+
+
+  border-radius: 0.75rem;
+
+
+  font-size: 1rem;
+
+
+  transition: all 0.2s ease-in-out;
+  background: white;
+
+
+
+  box-sizing: border-box;
+
+
+
+
+}
+
+
+
+
+
+.creer-form-group input:focus,
+.creer-form-group textarea:focus,
+.creer-form-group select:focus {
+
+
+
+
+
+
+  outline: none;
+
+
+  border-color: #4f46e5;
+
+
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.creer-form-group textarea {
+
+
+
+  min-height: 120px;
+
+
+
+
+
+  resize: vertical;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.creerversionform button {
+
+
+
+
+
+
+  padding: 1rem;
+
+
+
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  color: white;
+
+
+
+  border: none;
+
+
+
+  border-radius: 60px;
+
+
+
+  font-weight: 700;
+
+
+
+  font-size: 1.1rem;
+
+
+  cursor: pointer;
+
+
+
+  transition: all 0.2s ease-in-out;
+
+
+
+  margin-top: 0.5rem;
+
+
+  
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.creerversionform button:hover {
+
+
+
+
+
+
+
+  transform: translateY(-2px);
+
+
+
+
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+  filter: brightness(1.05);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+  .creerversion-contain {
+
+    padding: 2rem;
+
+  }
+
+  .creerversiontitre {
+
+    font-size: 1.6rem;
+
+  }
+}
+

@@ -1,0 +1,165 @@
+
+
+
+
+
+
+.render_contain {
+
+
+  padding: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.association_group {
+
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 40px;
+   padding-top: 100px;
+
+
+}
+
+
+
+
+
+
+
+
+
+.carte {
+
+
+
+  background: white;
+
+
+  border-radius: 8px;
+
+  padding: 12px;
+
+  min-width: 200px;
+
+
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pratique_carte {
+  border-left: 6px solid #2c7be5;
+}
+
+
+
+
+
+
+
+
+
+.method_carte {
+
+
+
+  margin-bottom: 10px;
+  border-left: 6px solid #28a745;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.les_fleches {
+  display: flex;
+
+  flex-direction: column;
+
+
+  margin: 0 20px;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.fleche {
+  font-size: 24px;
+  margin: 10px 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+.method_group {
+
+
+  display: flex;
+
+
+  flex-direction: column;
+
+
+
+}
+
+

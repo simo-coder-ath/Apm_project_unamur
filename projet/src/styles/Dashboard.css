@@ -1,0 +1,814 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --primary: #4f46e5;
+  --primary-light: #818cf8;
+  --primary-dark: #4338ca;
+  --secondary: #10b981;
+  --secondary-light: #34d399;
+  --accent: #8b5cf6;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --radius: 1rem;
+  --radius-sm: 0.5rem;
+  --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+
+
+
+
+
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+
+
+
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--gray-50);
+  color: var(--gray-800);
+  line-height: 1.5;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containe {
+
+
+  min-height: 100vh;
+
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  padding: 3rem 1rem;
+
+  display: flex;
+
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content {
+
+  max-width: 1280px;
+
+  width: 100%;
+
+
+  margin: 0 auto;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: var(--radius);
+
+  box-shadow: var(--shadow-xl);
+
+  padding: 2.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section {
+
+  text-align: center;
+
+  margin-bottom: 3rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section h1 {
+
+  font-size: 3rem;
+
+
+
+  font-weight: 800;
+
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+
+
+  margin-bottom: 1rem;
+
+  letter-spacing: -0.025em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section p {
+
+  font-size: 1.125rem;
+
+  color: var(--gray-600);
+
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  line-height: 1.7;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search {
+
+  max-width: 700px;
+
+  margin: 0 auto 3rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form {
+
+  
+  display: flex;
+
+  gap: 0.75rem;
+
+  background: white;
+
+
+
+  padding: 0.5rem;
+
+  border-radius: 60px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-200);
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.input {
+
+
+  position: relative;
+
+  flex: 1;
+
+
+
+
+
+
+
+
+}
+
+.icon {
+
+
+
+
+
+
+
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray-400);
+
+
+  pointer-events: none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.actionsvite {
+
+  margin-bottom: 3rem;
+
+}
+
+
+
+
+
+
+
+
+
+.grille {
+
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 1.5rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carte {
+
+
+  background: white;
+
+  border-radius: var(--radius);
+
+
+  padding: 2rem;
+
+
+  box-shadow: var(--shadow-md);
+
+  border: 1px solid var(--gray-200);
+
+
+
+  cursor: pointer;
+
+  transition: var(--transition);
+
+
+  display: flex;
+
+
+  flex-direction: column;
+
+
+
+
+  align-items: flex-start;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+.carte:hover {
+
+
+  transform: translateY(-4px);
+
+  box-shadow: var(--shadow-xl);
+
+  border-color: var(--primary-light);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon2 {
+
+
+  width: 56px;
+
+
+  height: 56px;
+
+  border-radius: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+  color: white;
+
+  margin-bottom: 1.5rem;
+
+  font-size: 1.5rem;
+
+  box-shadow: var(--shadow-md);
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.action-blue .icon2 {
+
+
+
+
+  background: linear-gradient(135deg, #4299e1, #3182ce);
+
+
+}
+
+
+
+
+
+.action-green .icon2 {
+
+  background: linear-gradient(135deg, #48bb78, #38a169);
+
+
+
+
+
+}
+
+
+
+
+.action-purple .icon2 {
+
+  background: linear-gradient(135deg, #9f7aea, #805ad5);
+
+
+}
+
+
+.action-orange .icon2 {
+
+  background: linear-gradient(135deg, #ed8936, #dd6b20);
+
+
+
+}
+
+
+
+
+
+.action-cyan .icon2 {
+
+
+
+  background: linear-gradient(135deg, #0bc5ea, #00b5d8);
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.carte h3 {
+
+
+
+
+
+  font-size: 1.25rem;
+
+  font-weight: 700;
+
+  color: var(--gray-800);
+
+
+  margin-bottom: 0.5rem;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carte p {
+
+
+  color: var(--gray-600);
+
+  margin: 0;
+
+  line-height: 1.6;
+
+
+
+
+
+
+
+
+
+  font-size: 0.95rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+  .content {
+
+
+    padding: 1.5rem;
+
+
+  }
+  
+
+  .section h1 {
+
+    font-size: 2.5rem;
+
+
+
+  }
+  
+
+
+  .grille {
+
+
+    grid-template-columns: 1fr;
+
+
+
+  }
+  
+
+
+  .form-practice {
+
+
+    padding: 1.5rem;
+
+
+
+  }
+}
+
+
+
+
+
+@keyframes fadeIn {
+
+
+  from { opacity: 0; transform: translateY(10px); }
+
+
+  to { opacity: 1; transform: translateY(0); }
+
+
+
+}
+
+
+
+.carte {
+
+
+
+  animation: fadeIn 0.3s ease-out;
+
+
+}

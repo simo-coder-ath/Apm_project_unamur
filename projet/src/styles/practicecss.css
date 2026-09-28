@@ -1,0 +1,1141 @@
+
+.practices-contain {
+
+
+  min-height: 100vh;
+
+
+  width: 100vw;
+
+
+
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+
+
+
+  box-sizing: border-box;
+
+
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+
+
+  flex-direction: column;
+
+
+  align-items: center;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.practices-contain h1 {
+
+
+
+
+  font-size: 2.25rem;
+
+  font-weight: 700;
+  color: white;
+
+
+
+
+  margin-bottom: 2rem;
+
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-bb {
+
+
+  display: flex;
+
+
+  flex-wrap: wrap;
+
+
+  justify-content: flex-start;
+
+
+
+  gap: 10px;
+
+
+
+  margin-bottom: 30px;
+
+
+
+  width: 100%;
+
+
+  max-width: 1200px;
+
+
+
+
+
+}
+
+
+
+
+
+
+.associer-btn {
+
+
+
+
+  padding: 0.75rem 1.5rem;
+
+
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  color: white;
+
+
+
+  border: none;
+
+
+  border-radius: 50px;
+
+
+
+  font-weight: 600;
+
+
+
+  cursor: pointer;
+
+
+  transition: all 0.2s ease-in-out;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.associer-btn:hover {
+
+
+
+
+  transform: translateY(-2px);
+
+
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+
+
+
+  filter: brightness(1.05);
+
+
+
+}
+
+
+
+
+
+
+
+
+.practice-grille {
+
+
+
+  display: grid;
+
+
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+
+
+  width: 100%;
+
+
+  max-width: 1200px;
+
+
+  margin-bottom: 40px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.practicecarte {
+
+
+
+
+
+  background: #ffffffcc;
+
+  padding: 1.5rem;
+  border-radius: 1rem;
+
+
+
+
+  cursor: pointer;
+
+
+  box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+
+
+
+
+
+
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.practicecarte.selected {
+
+
+
+  border: 2px solid #4f46e5;
+
+
+
+  box-shadow: 0 10px 20px rgba(79,70,229,0.3);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.practicecarte:hover {
+
+
+
+  transform: translateY(-4px);
+
+
+
+  box-shadow: 0 12px 18px rgba(0,0,0,0.12);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.practicecarte h2 {
+
+
+  margin: 0 0 0.5rem 0;
+
+
+  font-size: 1.25rem;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.practicecarte p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.practicecarte small {
+  color: #6b7280;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.versioncontain {
+
+
+
+
+
+
+  width: 100%;
+
+
+
+  max-width: 1200px;
+
+
+
+  margin-bottom: 40px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.versioncontain h2 {
+
+
+
+  color: white;
+
+
+  margin-bottom: 1rem;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.versioncarte {
+
+
+
+  background: #ffffffcc;
+
+
+
+  padding: 1rem;
+
+
+
+  margin-bottom: 0.75rem;
+
+
+
+  border-radius: 0.75rem;
+
+
+
+  transition: all 0.2s ease-in-out;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.versioncarte:hover {
+
+
+
+  transform: translateY(-2px);
+
+
+
+  box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modalover {
+
+
+
+
+  position: fixed;
+  top: 0;
+
+
+  left: 0;
+
+
+  width: 100vw;
+
+
+
+  height: 100vh;
+
+
+  background: rgba(0,0,0,0.6);
+
+
+
+  display: flex;
+
+
+  justify-content: center;
+
+
+
+  align-items: center;
+
+
+
+  z-index: 1000;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modalcontent {
+
+
+
+  background: #ffffff;
+
+
+
+  padding: 2rem;
+
+
+  border-radius: 1rem;
+
+
+
+  max-width: 600px;
+
+
+
+  width: 90%;
+
+
+
+  max-height: 90vh;
+
+
+
+
+  overflow-y: auto;
+
+
+
+  position: relative;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.modalcontent.large {
+
+
+
+  max-width: 1000px;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.modalheader {
+
+
+
+  display: flex;
+
+
+  justify-content: space-between;
+  align-items: center;
+
+
+  margin-bottom: 1rem;
+
+
+
+}
+
+
+
+
+.fermer-btn {
+
+
+
+  background: #ef4444;
+
+
+
+
+
+
+
+  color: white;
+
+
+
+  border: none;
+
+
+  border-radius: 50%;
+
+
+
+  width: 30px;
+
+  height: 30px;
+
+
+
+
+  cursor: pointer;
+
+
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modalcontent h2 {
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modalcontent input,
+
+.modalcontent select,
+
+.modalcontent textarea {
+
+
+
+
+
+
+
+
+  width: 100%;
+
+  padding: 0.75rem 1rem;
+
+  margin-bottom: 1rem;
+
+  border: 2px solid #e5e7eb;
+
+
+  border-radius: 0.5rem;
+
+  font-size: 1rem;
+  box-sizing: border-box;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.modalcontent button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  color: white;
+
+
+
+  border: none;
+
+
+  border-radius: 50px;
+
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+
+
+
+
+
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+.modalcontent button:hover {
+
+
+
+  transform: translateY(-2px);
+
+
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+
+
+
+
+  filter: brightness(1.05);
+
+
+
+}
+
+
+
+
+.triple-column {
+
+
+
+  display: flex;
+
+
+  gap: 20px;
+
+
+
+  flex-wrap: wrap;
+
+
+  margin-bottom: 1rem;
+
+
+
+}
+
+
+
+
+
+.triple-column > div {
+
+
+
+
+  flex: 1;
+
+  min-width: 250px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.versioncarte2 {
+
+
+  background: #f9fafb;
+  padding: 0.75rem;
+
+
+
+  margin-bottom: 0.5rem;
+
+  border-radius: 0.75rem;
+
+  cursor: pointer;
+
+
+  transition: all 0.2s ease-in-out;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.versioncarte2:hover {
+
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 10px rgba(0,0,0,0.08);
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.selected-version {
+
+
+  border: 2px solid #4f46e5;
+
+
+  box-shadow: 0 6px 12px rgba(79,70,229,0.3);
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boutton_associer {
+
+
+  display: block;
+
+
+
+  margin-top: 1rem;
+
+
+  padding: 0.75rem 1.5rem;
+
+
+  background: #10b981;
+
+
+
+  color: white;
+
+
+
+  border: none;
+
+
+
+  border-radius: 50px;
+
+
+  font-weight: 600;
+
+
+
+  cursor: pointer;
+
+
+  transition: all 0.2s ease-in-out;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boutton_associer:hover {
+
+
+
+  filter: brightness(1.1);
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+  .practice-grille {
+    grid-template-columns: 1fr; 
+  }
+
+
+
+
+
+
+
+
+
+
+  .header-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .associer-btn {
+
+    width: 100%;
+    text-align: center;
+
+  }
+
+
+
+
+
+
+
+
+  .triple-column {
+
+    flex-direction: column;
+
+
+
+
+  }
+
+
+  
+}
+
+
+
+
+
+

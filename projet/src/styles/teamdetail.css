@@ -1,0 +1,231 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team-details-contain {
+
+
+
+
+
+
+
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ 
+  padding: 20px;
+
+
+ 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.associer-btn {
+
+
+
+
+
+  padding: 0.75rem 1.5rem;
+
+
+
+
+  
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+ 
+ 
+  color: white;
+
+
+
+  border: none;
+
+
+  border-radius: 50px;
+
+
+
+  font-weight: 600;
+
+
+
+  cursor: pointer;
+
+
+
+  transition: all 0.2s ease-in-out;
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.associer-btn:hover {
+
+
+
+  transform: translateY(-2px);
+
+
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+
+
+
+  filter: brightness(1.05);
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team-buttons-bar {
+
+
+
+  display: flex;
+
+
+  flex-wrap: wrap;
+
+
+  justify-content: center; 
+
+  gap: 15px; 
+
+
+
+  max-width: 90%; 
+
+
+  margin-left: auto;
+
+
+  margin-right: auto;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team-members-section h3,
+
+.team-members-section ul li {
+
+
+
+
+
+
+
+
+
+  color: white;
+
+  font-weight: 600; 
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+

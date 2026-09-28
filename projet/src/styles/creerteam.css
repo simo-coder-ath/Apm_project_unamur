@@ -1,0 +1,474 @@
+
+
+
+
+
+
+.creerteampage {
+
+
+
+  min-height: 100vh;
+
+
+
+  display: flex;
+
+
+  justify-content: center;
+
+
+
+
+
+
+
+  align-items: center;
+
+
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.creerteamcarte {
+
+
+
+  width: 90%;
+
+  max-width: 600px;
+
+
+  padding: 2.5rem;
+
+
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 1rem;
+
+
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),
+              0 10px 10px -5px rgba(0,0,0,0.04);
+  backdrop-filter: blur(10px);
+
+
+
+  border: 1px solid rgba(255,255,255,0.3);
+  box-sizing: border-box;
+
+
+
+  animation: fadeIn 0.3s ease-out;
+
+
+
+
+}
+
+
+
+@keyframes fadeIn {
+
+
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.creerteamtitre {
+
+
+  font-size: 2rem;
+  font-weight: 700;
+
+
+  background: linear-gradient(135deg, #4f46e5 0%, #10b981 100%);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+
+  text-align: center;
+
+
+
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+.error {
+
+
+
+  background: #fee2e2;
+
+
+
+  color: #b91c1c;
+
+
+  padding: 1rem;
+
+
+  border-radius: 0.5rem;
+
+
+  margin-bottom: 1.5rem;
+
+
+  font-size: 0.9rem;
+
+  text-align: center;
+
+
+
+  border: 1px solid #fecaca;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.creerteamform {
+
+
+  display: flex;
+
+
+  flex-direction: column;
+
+
+
+}
+
+
+
+
+
+
+.creerteamform label {
+  font-weight: 600;
+
+
+  color: #374151;
+
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.creerteamform input,
+.creerteamform textarea {
+
+
+
+
+  width: 100%;
+  padding: 1rem 1.25rem;
+
+
+  border: 2px solid #e5e7eb;
+
+  border-radius: 0.5rem;
+
+
+  font-size: 1rem;
+  background: white;
+
+
+  transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+  box-sizing: border-box;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.creerteamform input:focus,
+.creerteamform textarea:focus {
+
+
+
+
+
+
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(79,70,229,0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+.creerteamform textarea {
+
+
+  min-height: 100px;
+  resize: vertical;
+
+
+}
+
+
+
+
+
+
+
+.creerteam-actions {
+
+
+
+  display: flex;
+
+
+  justify-content: space-between;
+
+
+
+  margin-top: 1.5rem;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.creerteam-actions button {
+
+
+  padding: 1rem 2rem;
+  border: none;
+
+
+  border-radius: 60px;
+
+  font-weight: 700;
+
+
+  font-size: 1rem;
+  cursor: pointer;
+
+
+  color: white;
+
+
+
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),
+              0 2px 4px -1px rgba(0,0,0,0.06);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.creerteam-actions button:hover {
+
+  transform: translateY(-2px);
+
+
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),
+              0 4px 6px -2px rgba(0,0,0,0.05);
+  filter: brightness(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.creerteam-actions button:nth-child(2) {
+
+
+
+  background: #9ca3af; 
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+
+  .creerteampage  {
+    padding: 2rem;
+
+  }
+
+
+
+
+  .creerteamtitre {
+
+    font-size: 1.75rem;
+
+
+  }
+
+
+
+  .creerteam-actions {
+
+
+    flex-direction: column;
+
+
+  }
+
+
+
+
+  .creerteam-actions button {
+
+
+
+    width: 100%;
+
+
+    margin-bottom: 0.75rem;
+
+
+
+  }
+}
